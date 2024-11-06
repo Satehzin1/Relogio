@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'Minecraft';
+    src: url(../fonts/Minecraft.ttf);
+}
+/* ================ fonts ================ */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url("../images/mine.jpeg") center no-repeat;
+    background-size: cover;
+    font-family: 'Minecraft';
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+body #date{
+    font-size: 1.5rem;
+}
+
+.relogio{
+    background-color: rgba(23, 3, 124, 0.144);
+    width: 80%;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3%;
+    box-shadow: 3px 4px 8px;
+    backdrop-filter: blur(4px);
+    border-radius: 10px; 
+    text-align: center;
+}
+
+.relogio div{
+    border-radius: 6px;
+    padding: 1.5rem 3rem;  
+    margin: 0 0.5rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #00000044;
+    text-shadow: 2px 2px rgb(37, 37, 37);
+    align-items: center;
+    justify-content: center;
+}
+
+.relogio div span{
+    font-size: 4rem;
+    color: gray;
+}
+
+.relogio div span.tempo{
+    font-size: 1.2rem ;
+    color: black;
+}
+
+@media (max-width: 769px){
+    .relogio{
+        flex-direction: column;
+        width: 60%;
+        height: 80vh;
+    }
+
+    .relogio div{
+        padding: 1.5rem 2rem;
+        width: 90%;
+
+    }
+}
